@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MC-Zoo Bedrock Server</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -26,16 +27,31 @@
   <section class="gallery">
     <h2>Gallery</h2>
     <div class="images">
-      <img src="images/IMG_0292.PNG" alt="Explore Sky Cities" />
-      <img src="images/IMG_0291.PNG" alt="Enter the Bedrock Prison" />
-      <img src="images/IMG_0294.PNG" alt="Overworld Ender Dragon!" />
+      <figure>
+        <a href="images/IMG_0292.PNG" data-lightbox="gallery" data-title="Explore Sky Cities">
+          <img src="images/IMG_0292.PNG" alt="Explore Sky Cities" />
+        </a>
+        <figcaption>Explore Sky Cities</figcaption>
+      </figure>
+      <figure>
+        <a href="images/IMG_0291.PNG" data-lightbox="gallery" data-title="Enter the Bedrock Prison">
+          <img src="images/IMG_0291.PNG" alt="Enter the Bedrock Prison" />
+        </a>
+        <figcaption>Enter the Bedrock Prison</figcaption>
+      </figure>
+      <figure>
+        <a href="images/IMG_0294.PNG" data-lightbox="gallery" data-title="Overworld Ender Dragon!">
+          <img src="images/IMG_0294.PNG" alt="Overworld Ender Dragon!" />
+        </a>
+        <figcaption>Overworld Ender Dragon!</figcaption>
+      </figure>
     </div>
   </section>
 
   <section class="info">
     <h2>About the Server</h2>
     <p>
-      This is our custom Minecraft Bedrock server where you can explore an amazing flatworld, discover secret builds, and maybe even join us for some creative fun.
+      This is our custom Minecraft Bedrock server where you can explore an animal-themed world, discover secret builds, and maybe even join us for some creative fun.
       Use the address <strong>play.mc-zoo.com</strong> to join.
     </p>
   </section>
@@ -43,5 +59,7 @@
   <footer>
     <p>Not affiliated with Mojang or Microsoft. Just for fun. 🐾</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 </body>
 </html>
