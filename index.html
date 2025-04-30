@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MC-Zoo Bedrock Server</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -28,25 +27,30 @@
     <h2>Gallery</h2>
     <div class="images">
       <figure>
-        <a href="images/IMG_0292.PNG" data-lightbox="gallery" data-title="Explore Sky Cities">
-          <img src="images/IMG_0292.PNG" alt="Explore Sky Cities" />
-        </a>
+        <a href="#img1"><img src="images/IMG_0292.PNG" alt="Explore Sky Cities" /></a>
         <figcaption>Explore Sky Cities</figcaption>
       </figure>
       <figure>
-        <a href="images/IMG_0291.PNG" data-lightbox="gallery" data-title="Enter the Bedrock Prison">
-          <img src="images/IMG_0291.PNG" alt="Enter the Bedrock Prison" />
-        </a>
+        <a href="#img2"><img src="images/IMG_0291.PNG" alt="Enter the Bedrock Prison" /></a>
         <figcaption>Enter the Bedrock Prison</figcaption>
       </figure>
       <figure>
-        <a href="images/IMG_0294.PNG" data-lightbox="gallery" data-title="Overworld Ender Dragon!">
-          <img src="images/IMG_0294.PNG" alt="Overworld Ender Dragon!" />
-        </a>
+        <a href="#img3"><img src="images/IMG_0294.PNG" alt="Overworld Ender Dragon!" /></a>
         <figcaption>Overworld Ender Dragon!</figcaption>
       </figure>
     </div>
   </section>
+
+  <!-- Lightbox Overlays -->
+  <div class="lightbox" id="img1">
+    <a href="#"><img src="images/IMG_0292.PNG" alt="Explore Sky Cities" /></a>
+  </div>
+  <div class="lightbox" id="img2">
+    <a href="#"><img src="images/IMG_0291.PNG" alt="Enter the Bedrock Prison" /></a>
+  </div>
+  <div class="lightbox" id="img3">
+    <a href="#"><img src="images/IMG_0294.PNG" alt="Overworld Ender Dragon!" /></a>
+  </div>
 
   <section class="info">
     <h2>About the Server</h2>
@@ -59,7 +63,5 @@
   <footer>
     <p>Not affiliated with Mojang or Microsoft. Just for fun. 🐾</p>
   </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>

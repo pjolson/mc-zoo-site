@@ -13,10 +13,6 @@ header, footer {
   padding: 1em;
 }
 
-h1, h2 {
-  margin: 0.5em 0;
-}
-
 section {
   padding: 1.5em;
   max-width: 900px;
@@ -32,7 +28,8 @@ section {
 
 .video-container iframe {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -52,6 +49,7 @@ section {
 .images img {
   max-width: 250px;
   border-radius: 8px;
+  cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -59,4 +57,28 @@ figcaption {
   margin-top: 0.5em;
   font-size: 0.9em;
   color: #555;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+  line-height: 100vh;
+}
+
+.lightbox img {
+  max-height: 90vh;
+  max-width: 90vw;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.lightbox:target {
+  display: block;
 }
